@@ -77,7 +77,7 @@
       //sortBy: 'most-commented',
       //sortBy: 'most-recent',
       sortBy: 'random',
-      template: '<a href="{{link}}" target="_blank"><img src="{{image}}" title="{{caption}}" /></a>',
+      template: '<a href="{{link}}" target="_blank"><img src="{{image}}" title="{{caption}} ~@{{model.user.username}}" /></a>',
       after:function(){e("#igscroller-feed").simplyScroll({
         customClass: 'igscroller',
         frameRate: 30,
