@@ -30,7 +30,12 @@
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
-</script> <div class=fb-like data-action=like data-href='https://www.facebook.com/512beachvb' data-layout=standard data-share=false data-show-faces=true data-width=260></div> </div> <iframe allowfullscreen='' frameborder=0 height=auto src='https://www.youtube-nocookie.com/embed/gfHuV72pNIA?rel=0&amp;amp;showinfo=0' width='100%'></iframe> <br> <br> <div class=panel> <p>If you want to improve your game...</p> <a class="button radius expand" href="mailto:42lva14r?sqs_title="><i class="fa fa-envelope"></i> Contact Us</a> </div> <div class='panel dark'> <p> <a href="/update/">Join the 512 Beach Update</a> to be the first to know about upcoming tournaments, camps, and drop-in clinics. </p> </div> <ul class='social-tabs tabs' data-tab=''> <li class=tab-title><a href="#tab-facebook"><i class="fa fa-facebook fa-2x"></i></a></li> <li class='tab-title active'><a href="#tab-instagram"><i class="fa fa-instagram fa-2x"></i></a></li> <li class=tab-title><a href="#tab-twitter"><i class="fa fa-twitter fa-2x"></i></a></li> </ul> <div class=tabs-content> <div class='content active' id=tab-instagram> <div id=instafeed></div> <h5 class=text-center><a href="https://instagram.com/512beachvb">#512beach</a></h5> </div> <div class=content id=tab-facebook> <div class=fb-page data-href="https://www.facebook.com/512beachvb" data-width=300 data-height=500 data-small-header=true data-adapt-container-width=true data-hide-cover=false data-show-facepile=true data-show-posts=true><div class=fb-xfbml-parse-ignore><blockquote cite="https://www.facebook.com/512beachvb"><a href="https://www.facebook.com/512beachvb">512 Beach</a></blockquote></div></div> </div> <div class=content id=tab-twitter> <a class=twitter-timeline data-dnt=true href="https://twitter.com/512beachvb" data-widget-id=648773991419670528>Tweets by @512beachvb</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> </div> </div> </aside> </div> </div> </div> <footer> <div class=row> <div class='small-6 columns'> <p class=text-left>&copy; <a class=text-alt href="/">512 Beach</a></p> </div> <div class='small-6 columns'> <p class=text-right>Crafted by <a title="Conversion Optimization Experts" href="//torspark.com">Torspark</a></p> </div> </div> </footer> <script src="/js/all.js"></script> <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script> <script>
+</script> <div class=fb-like data-action=like data-href='https://www.facebook.com/512beachvb' data-layout=standard data-share=false data-show-faces=true data-width=260></div> </div> <iframe allowfullscreen='' frameborder=0 height=auto src='https://www.youtube-nocookie.com/embed/gfHuV72pNIA?rel=0&amp;amp;showinfo=0' width='100%'></iframe> <br> <br> <div class=panel> <p>If you want to improve your game...</p> <a class="button radius expand" href="mailto:42lva14r?sqs_title="><i class="fa fa-envelope"></i> Contact Us</a> </div> <div class='panel dark stickyBox'> <p> <a href="/update/">Join the 512 Beach Update</a> to be the first to know about upcoming tournaments, camps, and drop-in clinics. </p> </div> </aside> </div> </div> </div> <footer> <div class=row> <div class='small-6 columns'> <p class=text-left>&copy; <a class=text-alt href="/">512 Beach</a></p> </div> <div class='small-6 columns'> <p class=text-right>Crafted by <a title="Conversion Optimization Experts" href="//torspark.com">Torspark</a></p> </div> </div> </footer> <script src="/js/all.js"></script> <script>
+  $(document).ready(function(e) {
+    // Sticky Box
+    $('.stickyBox').sticky({ topSpacing:65, bottomSpacing:100 });
+  });
+</script> <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script> <script>
   if(typeof noAnimateLogo != "undefined") {
     // don't animateLogo twice (var set on other page)
   } else {
@@ -47,20 +52,6 @@
     .to(["#g-blur-512","#g-beach"], 2, {opacity:0.5, repeat:-1, repeatDelay:.2, yoyo:true});
     tl.play();
   }
-</script> <script>
-  //instagram sidebar feed
-  $(document).ready(function() {
-    var igfeed = new Instafeed({
-      get: 'tagged',
-      tagName: '512beach',
-      clientId: '61435c2ee5894c568b062d536b665091',
-      limit: '6',
-      //sortBy: 'most-liked',
-      sortBy: 'random',
-      template: '<a href="{{link}}" target="_blank"><img src="{{image}}" title="{{caption}}" /></a>'
-    });
-    igfeed.run();
-  });
 </script> <script>
   // Instagram scroller
   jQuery(document).ready(function(e) {
