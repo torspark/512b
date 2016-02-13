@@ -11,7 +11,7 @@ http://512beach.com/events/
 monthly
 </changefreq>
 <lastmod>
-2016-02-11T07:45:44-06:00
+2016-02-13T01:57:40-06:00
 </lastmod>
 </url>
 <url>
@@ -86,6 +86,20 @@ monthly
 </url>
 <url>
 <loc>
+http://512beach.com/coaches/
+</loc>
+<priority>
+0.2
+</priority>
+<changefreq>
+monthly
+</changefreq>
+<lastmod>
+2016-02-13T05:21:33-06:00
+</lastmod>
+</url>
+<url>
+<loc>
 http://512beach.com/college-beach-programs/
 </loc>
 <priority>
@@ -95,7 +109,7 @@ http://512beach.com/college-beach-programs/
 yearly
 </changefreq>
 <lastmod>
-2016-02-11T07:16:19-06:00
+2016-02-13T05:50:39-06:00
 </lastmod>
 </url>
 <url>
@@ -137,7 +151,7 @@ http://512beach.com/resources/
 monthly
 </changefreq>
 <lastmod>
-2016-02-11T07:42:13-06:00
+2016-02-13T02:03:10-06:00
 </lastmod>
 </url>
 <url>
