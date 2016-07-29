@@ -222,10 +222,12 @@
         var precipProb = 0;
         var precipIntensity = 0;
       }
+      wSpeed = h.windSpeed || 0;
       hours += '<tr><td>'+ t.format('g:i a') + '<br/>' + h.summary +'<br/><i class="fa w-'+h.icon+' fa-2x"></i></td><td>'+
         Math.round(h.temperature) +'&deg;</td><td><span data-tooltip aria-haspopup="true" class="has-tip" title="'+precipIntensity+' in/hr">'+
         precipProb +'%</span></td><td><span data-tooltip aria-haspopup="true" class="has-tip" title="&plusmn;'+h.windSpeedError+' mph | &plusmn;'+h.windBearingError+'&deg;">'+
-        h.windSpeed.toFixed(1) +' mph&nbsp;&nbsp;<div class="fio-wind-bearing" style="transform: rotate('+h.windBearing+'deg)"><i class="fa fa-long-arrow-down"></i></div></td></tr>';
+        //h.windSpeed.toFixed(1) +' mph&nbsp;&nbsp;<div class="fio-wind-bearing" style="transform: rotate('+h.windBearing+'deg)"><i class="fa fa-long-arrow-down"></i></div></td></tr>';
+        wSpeed.toFixed(1) +' mph&nbsp;&nbsp;<div class="fio-wind-bearing" style="transform: rotate('+h.windBearing+'deg)"><i class="fa fa-long-arrow-down"></i></div></td></tr>';
     }
     document.getElementById("fio-hourly").innerHTML = hours;
   
