@@ -162,7 +162,9 @@
                 row.append($('<th />').html(data[i][j]));
             } else if (data[i][0]=='#') { // th if first item in row == '#'
                 row.append($('<th />').html(data[i][j]));
-            } else if ( /^\d/.test(data[i][j]) ) {
+            } else if ( /^\(/.test(data[i][j]) || /^(L|W)\d/.test(data[i][j]) ) { // .td-right if cell starts with "(" - game numbers or L or W
+                row.append($('<td class="td-right" />').html(data[i][j]));
+            } else if ( /^(\d|-){3,}/.test(data[i][j]) ) {
                 row.append($('<td class="td-small" />').html(data[i][j]));
             } else if (data[i][j].length > 0) { // .td-alt if cell has more than 0 characters (Team Names + blank bracket layout w/ spaces)
                 row.append($('<td class="td-alt" />').html(data[i][j]));
