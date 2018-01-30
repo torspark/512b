@@ -1061,7 +1061,7 @@ http://512beach.com/tournaments/20180203-bd4s/
 monthly
 </changefreq>
 <lastmod>
-2018-01-24T00:26:39-06:00
+2018-01-30T01:34:06-06:00
 </lastmod>
 </url>
 <url>
@@ -1075,7 +1075,7 @@ http://512beach.com/tournaments/20180204-mens-b-womens-b/
 monthly
 </changefreq>
 <lastmod>
-2018-01-24T00:26:39-06:00
+2018-01-30T01:34:06-06:00
 </lastmod>
 </url>
 <url>
@@ -1089,7 +1089,7 @@ http://512beach.com/tournaments/20180210-mens-bb-womens-bb/
 monthly
 </changefreq>
 <lastmod>
-2018-01-24T00:26:39-06:00
+2018-01-30T01:34:06-06:00
 </lastmod>
 </url>
 <url>
@@ -1103,7 +1103,7 @@ http://512beach.com/tournaments/20180211-rco-a-bbb/
 monthly
 </changefreq>
 <lastmod>
-2018-01-24T00:26:39-06:00
+2018-01-30T01:34:06-06:00
 </lastmod>
 </url>
 <url>
@@ -1117,7 +1117,7 @@ http://512beach.com/tournaments/20180217-mens-a-womens-a/
 monthly
 </changefreq>
 <lastmod>
-2018-01-24T00:26:39-06:00
+2018-01-30T01:34:06-06:00
 </lastmod>
 </url>
 <url>
@@ -1131,7 +1131,7 @@ http://512beach.com/tournaments/20180218-coed-bb-coed-b/
 monthly
 </changefreq>
 <lastmod>
-2018-01-24T00:26:39-06:00
+2018-01-30T01:34:06-06:00
 </lastmod>
 </url>
 <url>
@@ -1145,7 +1145,7 @@ http://512beach.com/tournaments/20180224-womens-open/
 monthly
 </changefreq>
 <lastmod>
-2018-01-24T00:26:39-06:00
+2018-01-30T01:34:06-06:00
 </lastmod>
 </url>
 <url>
@@ -1159,7 +1159,7 @@ http://512beach.com/tournaments/20180224-mens-unrated/
 monthly
 </changefreq>
 <lastmod>
-2018-01-24T00:26:39-06:00
+2018-01-30T01:34:06-06:00
 </lastmod>
 </url>
 <url>
@@ -1173,7 +1173,7 @@ http://512beach.com/tournaments/20180225-mens-open/
 monthly
 </changefreq>
 <lastmod>
-2018-01-24T00:26:39-06:00
+2018-01-30T01:34:06-06:00
 </lastmod>
 </url>
 <url>
@@ -1187,7 +1187,21 @@ http://512beach.com/tournaments/20180225-womens-unrated/
 monthly
 </changefreq>
 <lastmod>
-2018-01-24T00:26:39-06:00
+2018-01-30T01:34:06-06:00
+</lastmod>
+</url>
+<url>
+<loc>
+http://512beach.com/tournaments/20180303-mens-b-womens-b/
+</loc>
+<priority>
+0.2
+</priority>
+<changefreq>
+monthly
+</changefreq>
+<lastmod>
+2018-01-30T01:34:06-06:00
 </lastmod>
 </url>
 <url>
