@@ -124,7 +124,7 @@
     download: true,
     complete: function(results) {
       //console.log(results);
-      if (results.data[1][1].length > 2) {
+      if (results.data[1][1].length > 3) { // check if first team is more than just " / "
         var table = arrayToTable(results.data, {
           th: false,
           //thead: true,
@@ -159,11 +159,13 @@
   
     table.attr(options.attrs);
   
+    var skip_end_columns = 3; // skip last 3 columns (seeding/teams/points lists)
+  
     // loop through all the rows, we will deal with tfoot and thead later
     for (i = 0; i < data.length; i = i + 1) {
         row = $('<tr />');
         //for (j = 0; j < data[i].length; j = j + 1) {
-        for (j = 0; j < data[i].length - 3; j = j + 1) { // skip last 3 columns (seeding/teams/points lists)
+        for (j = 0; j < data[i].length - skip_end_columns; j = j + 1) { 
             if (i === 0 && options.th) {
                 row.append($('<th />').html(data[i][j]));
             } else if (data[i][1] === "Loser's Bracket") { // .th-alt if 2nd cell in row == Loser's Bracket
@@ -211,7 +213,7 @@
   Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vRWUMw2m9STK_NcfxPSmmI1au12Sdb8W3a_nZExt1NCDUU8uWWItRF-VEvU_vFE0V9IqZVQJstVx1SY/pub?output=csv", {
     download: true,
     complete: function(results) {
-      if (results.data[1][results.data[1].length - 2].length > 2) { // check if top seed has more than 2 characters
+      if (results.data[1][results.data[1].length - 2].length > 3) { // check if top seed has more than 3 characters
         var bracket = arrayToTableBracket(results.data, {
           //th: false,
           thead: true,
