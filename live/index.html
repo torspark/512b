@@ -69,7 +69,7 @@
     for (i = 0; i < data.length; i = i + 1) {
         row = $('<tr />');
         //for (j = 0; j < data[i].length; j = j + 1) {
-        for (j = 0; j < data[i].length - 1; j = j + 1) { // skip last cell (+/- & Loser)
+        for (j = 0; j < data[i].length - 4; j = j + 1) { // skip last 4 cells (+/- & Loser, spacer, 3-way tie, 3-way +/-)
             if (i === 0 && options.th) {
                 row.append($('<th />').html(data[i][j]));
             } else if (data[i][0]=='#' && j == 1 && data[i][1] != 'Court') { // th colspan 2 if first item in row == '#' & 2nd item is not 'Court' & on 2nd item
