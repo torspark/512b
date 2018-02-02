@@ -98,7 +98,7 @@
                 row.append($('<td colspan="2" />').html(teams));
                 j += 1;
             } else if (/\)$/.test(data[i][0]) && j == 5 ) { // Score
-                if ( j.length > 0 ) {
+                if ( data[i][j].length > 0 ) {
                   var score = data[i][j] + " - " + data[i][j+1];
                 } else {
                 var score = "";
