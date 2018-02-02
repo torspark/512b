@@ -65,11 +65,18 @@
   
     table.attr(options.attrs);
   
+    // set skip_columns #
+    var skip_end_columns = 0;
+    if (data[0][1]=="Blind Draw 4's") {
+      skip_end_columns = 9; // skip last 4 cells + last 5 cells for player names
+    } else {
+        skip_end_columns = 4; // skip last 4 cells (+/- & Loser, spacer, 3-way tie, 3-way +/-)
+    }
     // loop through all the rows, we will deal with tfoot and thead later
     for (i = 0; i < data.length; i = i + 1) {
         row = $('<tr />');
         //for (j = 0; j < data[i].length; j = j + 1) {
-        for (j = 0; j < data[i].length - 4; j = j + 1) { // skip last 4 cells (+/- & Loser, spacer, 3-way tie, 3-way +/-)
+        for (j = 0; j < data[i].length - skip_end_columns; j = j + 1) {
             if (i === 0 && options.th) {
                 row.append($('<th />').html(data[i][j]));
             } else if (data[i][0]=='#' && j == 1 && data[i][1] != 'Court') { // th colspan 2 if first item in row == '#' & 2nd item is not 'Court' & on 2nd item
