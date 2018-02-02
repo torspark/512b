@@ -96,7 +96,7 @@
             } else if (/\)$/.test(data[i][0]) && j == 5 ) { //scoreA
                 row.append($('<td class="td-right" />').html(data[i][j]));
             } else if ( j == 6 ) { //score-
-                row.append($('<td class="no-side-padding" />').html(data[i][j]));
+                row.append($('<td class="td-no-side-padding" />').html(data[i][j]));
             } else if (/\)$/.test(data[i][0]) && j == 7 ) { //scoreB
                 row.append($('<td class="td-left" />').html(data[i][j]));
             } else {
