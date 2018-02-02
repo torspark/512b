@@ -90,9 +90,9 @@
                 j += 5;
             } else if (data[i][j].length == 1 && (j == 1 || j == 4) ) {
                 row.append($('<td class="td-alt" />').html(data[i][j]));
-            } else if (j == 5 ) { //scoreA
+            } else if (/\)$/.test(data[i][0]) && j == 5 ) { //scoreA
                 row.append($('<td class="td-right" />').html(data[i][j]));
-            } else if (j == 7 ) { //scoreB
+            } else if (/\)$/.test(data[i][0]) && j == 7 ) { //scoreB
                 row.append($('<td class="td-left" />').html(data[i][j]));
             } else {
                 row.append($('<td />').html(data[i][j]));
