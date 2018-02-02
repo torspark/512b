@@ -81,7 +81,7 @@
             } else if (data[i][0]=='#' && j == 4 && data[i][1] != 'Court') { // Pool; th colspan 2 if first item in row == '#' & 2nd item is not 'Court' & on 2nd item
                 row.append($('<th colspan="2" />').html(data[i][j]));
                 j += 1;
-            } else if (data[i][0]=='#' && data[i][j]=='Score') { // use th-alt colspan 3 if first item in row == '#' & item == 'Score'
+            } else if (data[i][0]=='#' && (data[i][j]=='Score' || data[i][j]=='Teams') ) { // use th-alt colspan 3 if first item in row == '#' & item == 'Score' or 'Teams'
                 row.append($('<th colspan="2" class="th-alt" />').html(data[i][j]));
                 j += 1;
             } else if (data[i][0]=='#' && data[i][1]=='Court') { // use th-alt if first item in row == '#' & 2nd item == 'Court'
