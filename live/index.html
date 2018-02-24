@@ -190,9 +190,9 @@
                 row.append($('<th class="th-alt" />').html(data[i][j]));
             } else if (data[i][0]=='#') { // th if first item in row == '#'
                 row.append($('<th />').html(data[i][j]));
-            } else if ( /^([A-Z|(])\d/.test(data[i][j]) || /^\d{1,2}$/.test(data[i][j]) ) { // .td-right if cell starts with capital letter or "(" & 2nd character is a digit
+            } else if ( /^([A-Z|(])\d/.test(data[i][j]) || /^\d{1,2}$/.test(data[i][j]) ) { // .td-right if cell starts with capital letter or "(" & 2nd character is a digit (seeds & game #'s)
                 row.append($('<td class="td-right" />').html(data[i][j]));
-            } else if ( /^(\d|-){3,}/.test(data[i][j]) ) {
+            } else if ( /^(\d|-){3,}/.test(data[i][j]) ) { // .td-small if cell starts with digit or -   (scores)
                 row.append($('<td class="td-small" />').html(data[i][j]));
             } else if ( /^court\s/.test(data[i][j]) ) {
                 row.append($('<td class="td-court" />').html(data[i][j]));
