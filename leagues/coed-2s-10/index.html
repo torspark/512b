@@ -213,7 +213,7 @@
                 j += 4;
             } else if (data[i][j].length == 1 && (j == 2 || j == 5) ) { // Court & Ref columns
                 row.append($('<td class="td-alt" />').html(data[i][j]));
-            } else if (/\)$/.test(data[i][0]) && j == 3 ) { // Teams
+            } else if (/\//.test(data[i][0]) && j == 3 ) { // Teams
                 var teams = data[i][j] + " vs " + data[i][j+1];
                 row.append($('<td colspan="2" />').html(teams));
                 j += 1;
