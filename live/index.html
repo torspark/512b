@@ -196,6 +196,8 @@
                 row.append($('<td class="td-small" />').html(data[i][j]));
             } else if ( /^court\s/.test(data[i][j]) ) {
                 row.append($('<td class="td-court" />').html(data[i][j]));
+            } else if ( /^ct\.\s/.test(data[i][j]) ) {
+                row.append($('<td class="td-court" />').html(data[i][j]));
             } else if (data[i][j].length > 0) { // .td-alt if cell has more than 0 characters (Team Names + blank bracket layout w/ spaces)
                 row.append($('<td class="td-alt" />').html(data[i][j]));
             } else {
