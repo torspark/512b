@@ -234,7 +234,7 @@
   
     return table;
   };
-  Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vRWUMw2m9STK_NcfxPSmmI1au12Sdb8W3a_nZExt1NCDUU8uWWItRF-VEvU_vFE0V9IqZVQJstVx1SY/pub?output=csv", {
+  Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vRc256Nf-VUI8LhWYkdYBnlgix4CBjPYq0bPmlyysS3yVlchazxxTOYAnA6rX4XbDgao16lBnzdl869/pub?output=csv", {
     download: true,
     complete: function(results) {
       if (results.data[1][results.data[1].length - 2].length > 3) { // check if top seed has more than 3 characters
