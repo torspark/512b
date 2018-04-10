@@ -211,7 +211,7 @@
             } else if (data[i][0].length < 3 && data[i][j].length > 3) { // colspan 5 if data row has more than 3 characters (Team Names)
                 row.append($('<td class="text-left" colspan="5" />').html(data[i][j]));
                 j += 4;
-            } else if ( (0 < data[i][j].length < 3) && (j == 2 || j == 5) ) { // Court & Ref columns
+            } else if ( (0 < data[i][j].length && data[i][j].length < 3) && (j == 2 || j == 5) ) { // Court & Ref columns
                 row.append($('<td class="td-alt" />').html(data[i][j]));
             } else if (/\//.test(data[i][0]) && j == 3 ) { // Teams
                 var teams = data[i][j] + " vs " + data[i][j+1];
