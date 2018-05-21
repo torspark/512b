@@ -258,7 +258,7 @@
     return table;
   };
   
-  Papa.parse("", {
+  Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vTMAw39A3FaErq_Amtq8ZVEPFXsBoNKnUe9f08SmHu460dAbPWMKGGWSXIGrCHwvrbszYjb0vMp5wkO/pub?output=csv", {
     download: true,
     complete: function(results) {
       console.log(results);
