@@ -1,0 +1,137 @@
+<!DOCTYPE html> <html class=no-js lang=en> <head> <meta charset=utf-8> <meta content='IE=edge,chrome=1' http-equiv=X-UA-Compatible> <meta content='width=device-width, initial-scale=1.0' name=viewport> <title>League - Men | 512 Beach Live</title> <meta content='512 Beach Volleyball Tournament Live Scores &amp; Updates.' name=description> <meta content='512 Beach Volleyball Tournament Live Scores &amp; Updates.' property='og:description'> <meta content='League - Men | 512 Beach Live' property='og:title'> <meta content=noarchive name=robots> <link href="/css/app.css" rel=stylesheet /> <script src="/js/modernizr.js"></script> <meta content=website property='og:type'> <meta content='http://live.512beach.com/league-men/' property='og:url'> <meta content='http://live.512beach.com/img/512-beach-live-scores_1200x630.png' property='og:image'> <meta content=1200 property='og:image:width'> <meta content=630 property='og:image:height'> <meta content=en_US property='og:locale'> <meta content='512 Beach Live' property='og:site_name'> <meta content=763497243748111 property='fb:app_id'> <script src="/js/papaparse.min.js"></script> <link href='/apple-touch-icon-57x57.png' rel=apple-touch-icon sizes=57x57> <link href='/apple-touch-icon-60x60.png' rel=apple-touch-icon sizes=60x60> <link href='/apple-touch-icon-72x72.png' rel=apple-touch-icon sizes=72x72> <link href='/apple-touch-icon-76x76.png' rel=apple-touch-icon sizes=76x76> <link href='/apple-touch-icon-114x114.png' rel=apple-touch-icon sizes=114x114> <link href='/apple-touch-icon-120x120.png' rel=apple-touch-icon sizes=120x120> <link href='/apple-touch-icon-144x144.png' rel=apple-touch-icon sizes=144x144> <link href='/apple-touch-icon-152x152.png' rel=apple-touch-icon sizes=152x152> <link href='/apple-touch-icon-180x180.png' rel=apple-touch-icon sizes=180x180> <link href='/favicon-32x32.png' rel=icon sizes=32x32 type='image/png'> <link href='/android-chrome-192x192.png' rel=icon sizes=192x192 type='image/png'> <link href='/favicon-96x96.png' rel=icon sizes=96x96 type='image/png'> <link href='/favicon-16x16.png' rel=icon sizes=16x16 type='image/png'> <link href='/manifest.json' rel=manifest> <meta content=00aba9 name=msapplication-TileColor> <meta content='/mstile-144x144.png' name=msapplication-TileImage> <meta content=008080 name=theme-color> <script>
+  window.heap=window.heap||[],heap.load=function(t,e){window.heap.appid=t,window.heap.config=e;var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+t+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(t){return function(){heap.push([t].concat(Array.prototype.slice.call(arguments,0)))}},p=["clearEventProperties","identify","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+  heap.load("2940041816");
+</script> <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-29086369-6', 'auto');
+  ga('send', 'pageview');
+</script> <script>
+  window.__insp = window.__insp || [];
+  __insp.push(['wid', 1634690570]);
+  (function() {
+  function ldinsp(){if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+  setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+  })();
+</script> <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','//connect.facebook.net/en_US/fbevents.js');
+  
+  fbq('init', '1664023937193209');
+  fbq('track', "PageView");
+</script> <noscript> <img height=1 src='https://www.facebook.com/tr?id=1664023937193209&amp;ev=PageView&amp;noscript=1' style='display:none' width=1> </noscript> </head> <body class='league-men league-men_index'> <div class=yield> <main role=main> <div class=text-center id=leagueSchedule></div> </main> </div> <noscript> <div id=noscript-warning> live.512beach.com works best with JavaScript enabled. </div> </noscript> <script src="/js/all.js"></script> <script>
+  var arrayToTable = function (data, options) {
+    "use strict";
+  
+    var table = $('<table />'),
+      thead,
+      tfoot,
+      rows = [],
+      row,
+      i,
+      j,
+      defaults = {
+          th: true, // should we use th elements for the first row
+          thead: false, //should we incldue a thead element with the first row
+          tfoot: false, // should we include a tfoot element with the last row
+          attrs: {} // attributes for the table element, can be used to
+      };
+  
+    options = $.extend(defaults, options);
+  
+    table.attr(options.attrs);
+  
+    // set skip_columns #
+    var skip_end_columns = 9; // skip last 4 cells (+/- & Loser, spacer, 3-way tie, 3-way +/-, Player Names & Points)
+  
+    // loop through all the rows, we will deal with tfoot and thead later
+    for (i = 0; i < data.length; i = i + 1) {
+        row = $('<tr />');
+        //for (j = 0; j < data[i].length; j = j + 1) {
+        for (j = 0; j < data[i].length - skip_end_columns; j = j + 1) {
+            if (i === 0 && options.th) {
+                row.append($('<th />').html(data[i][j]));
+            } else if (data[i][0]=='#' && j == 3) { // Division; th colspan 2 if first item in row == '#' & 4th item
+                row.append($('<th colspan="2" />').html(data[i][j]));
+                j += 1;
+            } else if ( data[i][0] != '#' && (data[i][j]=='Score' || data[i][j]=='Teams' || data[i][j]=='Playoffs') ) { // use th-alt colspan 3 if first item in row == '#' & item == 'Score' or 'Teams'
+                row.append($('<th colspan="2" class="th-alt" />').html(data[i][j]));
+                j += 1;
+            } else if (data[i][0]=='Date' && data[i][1]=='Time') { // use th-alt if first item in row == 'Date' & 2nd item == 'Time'
+                row.append($('<th class="th-alt" />').html(data[i][j]));
+            } else if (data[i][0]=='#') { // use th if first item in row == '#'
+                row.append($('<th />').html(data[i][j]));
+            } else if (data[i][0].length < 3 && data[i][j].length > 3) { // colspan 5 if data row has more than 3 characters (Team Names)
+                row.append($('<td class="text-left" colspan="5" />').html(data[i][j]));
+                j += 4;
+            } else if ( (0 < data[i][j].length && data[i][j].length < 3) && (j == 2 || j == 5) ) { // Court & Ref columns
+                row.append($('<td class="td-alt" />').html(data[i][j]));
+            } else if (/\//.test(data[i][0]) && j == 3 ) { // Teams
+                var teams = data[i][j] + " vs " + data[i][j+1];
+                row.append($('<td colspan="2" />').html(teams));
+                j += 1;
+            } else if (/\)$/.test(data[i][0]) && j == 6 ) { // Score
+                if ( data[i][j].length > 0 ) {
+                  var score = data[i][j] + " - " + data[i][j+1];
+                } else {
+                var score = "";
+                }
+                row.append($('<td colspan="2" />').html(score));
+                j += 1;
+            } else {
+                row.append($('<td />').html(data[i][j]));
+            }
+        }
+        rows.push(row);
+    }
+  
+    // if we want a thead use shift to get it
+    if (options.thead) {
+        thead = rows.shift();
+        thead = $('<thead />').append(thead);
+        table.append(thead);
+    }
+  
+    // if we want a tfoot then pop it off for later use
+    if (options.tfoot) {
+        tfoot = rows.pop();
+    }
+  
+    // add all the rows
+    for (i = 0; i < rows.length; i = i + 1) {
+        table.append(rows[i]);
+    }
+  
+    // and finally add the footer if needed
+    if (options.tfoot) {
+        tfoot = $('<tfoot />').append(tfoot);
+        table.append(tfoot);
+    }
+  
+    return table;
+  };
+  
+  Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vTMAw39A3FaErq_Amtq8ZVEPFXsBoNKnUe9f08SmHu460dAbPWMKGGWSXIGrCHwvrbszYjb0vMp5wkO/pub?output=csv", {
+    download: true,
+    complete: function(results) {
+      console.log(results);
+      if (results.data[1][1].length > 1) { // check if first team is more than just " "
+        var table = arrayToTable(results.data, {
+          th: false,
+          //thead: true,
+          attrs: {class: 'liveTable rtable'}
+        });
+  
+        //$('#leagueSchedule').append("<h2>Pool Play</h2>");
+        $('#leagueSchedule').append(table);
+      }
+  
+    }
+  });
+</script> </body> </html>
