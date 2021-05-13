@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+# https://512beach.netlify.com/* https://512beach.com/:splat 301!
